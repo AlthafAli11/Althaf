@@ -30,7 +30,7 @@ int main()
     printf("\n%s %d", "The radix you have entered is", rad);
     printf("\nThe log2 of the number is %.2f", log2(num));
     printf("\nThe integer result of the number divided by %d is %d",rad ,(num/rad));
-    printf("\nThe remainder is %d",(8%rad));
+    printf("\nThe remainder is %d",(num%rad));
     Dec2RadixI(num, rad);
     printf("\n%s", "Enter a decimal number: ");
     scanf("%d", &num);
@@ -72,4 +72,3 @@ void Dec2RadixI(int decValue, int radValue){     //function declaration
     }
     
       printf("\nThe radix-%d value is %s", radValue, convertArr);
-}
